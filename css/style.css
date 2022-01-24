@@ -159,6 +159,8 @@ table {
 	display: flex;
 	flex-direction: column;
 	margin-top: 230px;
+	position:relative;
+	z-index: 9;
 }
 .up__1{
 	font-family: Montserrat;
@@ -215,5 +217,32 @@ li{
 	margin-bottom: 60px;
 }
 .downtext__center{
-	margin-bottom: 80px;
+	margin-bottom: 110px;
+
+}
+.circle1 {
+	position: absolute;
+    border: 1px solid white;
+    border-radius: 50%;
+	width: 147px;
+	height: 147px;
+	z-index: 5;
+	left: 419px;
+	top: 593px;
+}
+.circle2 {
+	position: absolute;
+    border: 1px solid white;
+    border-radius: 50%;
+	width: 257px;
+	height: 257px;
+	z-index: 4;
+	left: 364px;
+	top: 538px;
+}
+.circle1::before{
+	content: '';
+	border-radius: 50%;
+	background: linear-gradient(to right, rgb(255, 255, 255), rgb(0, 4, 12), rgb(255, 255, 255));;
+
 }
